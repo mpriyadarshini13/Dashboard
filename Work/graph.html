@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+    
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+         var data = new google.visualization.arrayToDataTable([
+          ['Company Name', 'Turnover/Net Worth(Crore)',{role: 'annotation'}],
+          ['Tata Steel Processing & Distribution Limited(TSPDL)', 4280.92,'4280.92'],
+          ['The Tinplate Company Of India Limited(TCIL)', 2611.1,'2611.1'],
+          ['Tata Metaliks Limited', 2155.11,'2155.11'],
+          ['Jamshedpur Utilities & Services Company Limited(Jusco)', 1114.13,'1114.13'],
+          ['Tata Sponge Iron Limited',992.05,'992.05'],
+          ['Bhubaneshwar Power Private Limited',540.63,'540.63'],
+          ['Tata BlueScope Steel Limited',400.52,'400.52'],
+          ['Jamshedpur Continuous Annealing & Processing co.p.Ltd',371.37,'371.37'],
+          ['Indian Steel & Wire Products Ltd',288.64,'288.64'],
+          ['TM International Logistics Ltd',198.72,'198.72'],
+          ['Tata Steel Alloys Ltd',174.96,'174.96'],
+          ['Mjunction Services Ltd',139.62,'139.62'],
+          ['The Tata Pigments Limited',115.7,'115.7'],
+          ['Jamshedpur Football & Sporting Private Ltd',46.52,'46.52'],
+          ['Tata Steel Foundation',43.66,'43.66'],
+          ['TKM Global Logistics Ltd',27.72,'27.72'],
+          ['Kalzip India Private Ltd',24.07,'24.07'],
+          ['Naba Diganta Water Management Ltd',16.89,'16.89'],
+          ['Adityapur Toll Bridge Company Ltd',7.87,'7.87'],
+          ['Tata NYK Shipping Pte Ltd',1.74,'1.74'],
+          ['Tata Steel Special Economic Zone Ltd',0.38,'0.38'],
+          ['TM Mining Company Ltd',0,'0'],
+          ['Tayo Rolls Ltd(TRL)',0,'0'],
+          ['SEZ Adityapur Ltd',-0.04,'-0.04'],
+          ['S&T Mining Company Private Ltd',-4.61,'-4.61'],
+          ]);
+         
+         
+ var options = {
+   width: 800,
+   legend: { position: 'none' },
+  chart: {
+     title: 'Turnover/Net Worth(Crore) by Company Name',
+     subtitle: 'popularity by percentage' },
+   axes: {
+     x: {
+       0: { side: 'bottom', label: 'Company'} // Top x-axis.
+     }
+   },
+   bar: { groupWidth: "90%" }
+ };
+        var chart = new google.charts.Bar(document.getElementById('bottom_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+  </head>
+  <body>
+    <div transform: rotate(-60deg) id="bottom_x_div" style="width: 800px; height: 600px;"></div>
+   </body>
+</html>

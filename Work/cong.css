@@ -1,0 +1,22 @@
+body
+{
+    background-image: url("https://userscontent2.emaze.com/images/93b859f2-0037-49f8-af19-246cb1652f28/eb2ed28ab7b4d5fb653164394796a227.jpg");
+   background-size: cover;
+}
+a
+{
+   color: yellow;
+   font-family: Tahoma, Geneva, sans-serif;
+   margin-left: 30px;
+ }
+ .cong
+ {
+    background:  rgba(44,62,80,0.7);
+    padding: 40px;
+    margin-top: 80px;
+    height: 200px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 240px;
+ }
